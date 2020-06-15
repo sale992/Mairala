@@ -33,11 +33,12 @@
 .hover-team{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 100%;
     &:hover{
         opacity: 0.85;
     }
+    
 }
 .member {
     

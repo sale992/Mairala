@@ -223,6 +223,18 @@ a {
       justify-content: center;
       align-items: flex-start;
       width: 50%; }
+      .about__form--text .resp,
+      .about-wrapper__form--text .resp {
+        display: none;
+        visibility: hidden;
+        width: 100%; }
+        @media (max-width: 768px) {
+          .about__form--text .resp,
+          .about-wrapper__form--text .resp {
+            display: inline-block;
+            visibility: visible;
+            margin: 3rem auto;
+            padding: 0; } }
       .about__form--text h3,
       .about-wrapper__form--text h3 {
         font-size: 3rem;
@@ -249,10 +261,17 @@ a {
         .about-wrapper__form--text .btn-read:hover {
           color: #fff;
           background-color: #333333; }
+        @media (max-width: 768px) {
+          .about__form--text .btn-read,
+          .about-wrapper__form--text .btn-read {
+            margin: 0 auto; } }
+      @media (max-width: 768px) {
+        .about__form--text,
+        .about-wrapper__form--text {
+          width: 100%;
+          align-items: center; } }
     .about__form--img,
     .about-wrapper__form--img {
-      width: 50%;
-      height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -260,7 +279,13 @@ a {
       position: absolute;
       top: 0;
       left: 50%;
+      width: 50%;
       height: 100%; }
+      @media (max-width: 768px) {
+        .about__form--img,
+        .about-wrapper__form--img {
+          display: none;
+          visibility: hidden; } }
 
 .services {
   padding: 1rem 0 9rem 0; }
@@ -614,7 +639,9 @@ a {
       transform: translate(-50%, -10%); }
     .timeline__section:nth-child(even) .outer {
       order: 1; }
-    .timeline__section:nth-child(even) .content h3, .timeline__section:nth-child(even) .content p, .timeline__section:nth-child(even) .content span {
+    .timeline__section:nth-child(even) .content h3,
+    .timeline__section:nth-child(even) .content p,
+    .timeline__section:nth-child(even) .content span {
       text-align: right; }
     .timeline__section:nth-child(even) .content span {
       display: block; }

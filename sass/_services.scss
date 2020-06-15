@@ -43,6 +43,10 @@
             line-height: 2.4rem;
             letter-spacing: 1px;
         }
+        @media (max-width:768px){
+            flex-direction: column;
+            padding: 1rem 5rem;
+        }
         
     }
 }

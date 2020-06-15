@@ -32,7 +32,7 @@
         font-size: 1.3rem;
         font-family: "Raleway", sans-serif;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
         align-content: center;
@@ -44,6 +44,7 @@
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
+                margin: 0 1rem;
 
                 .piechart {
                     position: relative;

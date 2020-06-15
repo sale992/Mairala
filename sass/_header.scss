@@ -1,7 +1,7 @@
 .header, .header-wrapper {
     background-color: #303030;
     // min-height: 10vh;
-    height: 9.5rem;
+    min-height: 9.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,14 +11,19 @@
         justify-content: space-evenly;
     }
 }
-
+.header__logo{
+    padding: 2rem 0;
+}
 .navigation {
     font-size: 1.5rem;
     color: #ffffff;
     letter-spacing: 1px;
     line-height: 3rem;
+    padding: 2rem 0;
     &__list {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         list-style-type: none;
     }
     &__item {

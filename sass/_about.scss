@@ -41,10 +41,11 @@
                 visibility: hidden;
                 width: 100%;
                 @media (max-width:768px){
-                    display: inline-block;
+                    display: block;
                     visibility: visible;
                     margin: 3rem auto;
-                    padding: 0;
+                    // padding: 0;
+                   
                 }
             }
             h3 {

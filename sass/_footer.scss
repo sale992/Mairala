@@ -1,0 +1,119 @@
+.footer {
+    background-color: #222222;
+    // color: #fff;
+    color: #b6afaf;
+    padding: 9rem 0 0 0;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 3rem;
+        h4 {
+            color: #c2c2c2;
+            margin-bottom: 3rem;
+            text-align: left;
+        }
+        &--logo {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            padding: 3rem;
+            color: #505050;
+
+            img {
+                margin-bottom: 3rem;
+            }
+            p {
+                text-align: left;
+            }
+            @media (max-width: 768px) {
+                width: 50%;
+            }
+        }
+
+        &--posts {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            max-width: 25%;
+            padding: 3rem 0;
+            .box {
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 4rem 0;
+                border-bottom: 1px solid #393939;
+            }
+
+            span {
+                color: #505050;
+                font-size: 1rem;
+                &:not(:first-of-type) {
+                    padding-top: 5rem;
+                }
+            }
+        }
+
+        &--feeds {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 25%;
+            padding: 3rem 0;
+            .box {
+                display: flex;
+                flex-direction: column;
+                padding: 0 0 4rem 0;
+                border-bottom: 1px solid #393939;
+            }
+            p {
+                text-align: left;
+            }
+            span {
+                color: #3e3e3e;
+                font-size: 1rem;
+                &:not(:first-of-type) {
+                    padding-top: 5rem;
+                }
+            }
+        }
+
+        &--address {
+            display: flex;
+            flex-direction: column;
+            max-width: 25%;
+            padding: 3rem;
+            p {
+                text-align: left;
+            }
+        }
+    }
+    &__copyright {
+        background-color: #1c1c1c;
+        width: 100%;
+        text-align: center;
+        padding: 2rem 0;
+        h5 {
+            text-transform: capitalize;
+            font-size: 1.6rem;
+        }
+    }
+}
+.icons {
+    display: flex;
+    flex-direction: column;
+
+    &__location,
+    &__phone,
+    &__email {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0;
+        justify-content: flex-start;
+        height: 100%;
+        p {
+            padding-left: 3rem;
+        }
+    }
+}

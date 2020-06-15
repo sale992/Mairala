@@ -1,0 +1,142 @@
+
+
+.project{
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    // padding: 9rem 0;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    &__heading{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        color: #7b6c63;
+        text-align: center;
+        padding: 9rem 0;
+        // span{
+        //     // margin: 2rem 0;
+        //     // font-weight: bold;
+            
+        // }
+        
+    }
+    
+}
+
+
+.picture-row{
+    display: flex;
+    // flex-direction: row;
+    flex-wrap: wrap;
+    
+
+    .image-1{
+        // margin: 1rem 2rem;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // width: 25%;
+    }
+    .outer {
+        position: relative;
+        width: 25%;
+        &:before {
+          display: block;
+          content: "";
+          width: 100%;
+          padding-top: 100%;
+        }
+        
+        > .inner {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          padding: 3rem;
+          
+        }
+        @media (max-width: 768px){
+            width: 50%;
+        }
+        @media (max-width: 480px){
+            width: 100%;
+        }
+      }
+}
+
+.hover-inner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 0;
+    // margin: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    transition: all .6s ease-in;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
+
+
+
+
+
+.twitter{
+    padding: 9rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    font-size: 2rem;
+    h3{
+        text-transform: uppercase;
+        line-height: 4.8rem;
+    }
+    h5{
+        margin: 2rem 0;
+        text-align: center;
+    }
+    span{
+        color: #227086;
+        font-size: 1.8rem;
+        line-height: 4.8rem;
+    }
+}
+
+.btn-project{
+    min-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-see{
+    background-color: transparent;
+    color: #000000;
+    border: 1px solid #000000;
+    margin: 9rem 0;
+    border-radius: 3px;
+    transition: all .2s ease;
+
+    &:hover{
+        color: #fff;
+        background-color: #000000;
+        
+    }
+}

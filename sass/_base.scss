@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+h2{
+    font-size: 4rem;
+    line-height: 4.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #7b6c63;
+
+}
+h3{
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+h4{
+    font-size: 2.1rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+h5{
+    font-size: 1.9rem;
+    line-height: 3.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h6{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    line-height: 3.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.line{
+    position: relative;
+    padding-bottom: 45px;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75px;
+        height: 3px;
+        background-color: #7b6c63;
+    }
+}
+
+.line-small{
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+    }
+}
+#example{
+    height: 300px;
+    width: 300px;
+}

@@ -1,0 +1,74 @@
+.skills {
+    // min-height: 50vh;
+    padding: 9rem 0;
+    background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.6)), url(../images/backskill.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .skills-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+    }
+
+    &__heading {
+        color: #fff;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        margin-bottom: 4rem;
+        line-height: 3rem;
+        letter-spacing: 1px;
+    }
+
+    &__cardbox {
+        color: #fff;
+        font-size: 1.3rem;
+        font-family: "Raleway", sans-serif;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        &--card {
+            text-align: center;
+            position: relative;
+            .box {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+
+                .piechart {
+                    position: relative;
+                    border: 5px solid #7b6c63;
+                    padding: .5rem;
+                    border-radius: 50%;
+                    height: 150px;
+                    width: 150px;
+                    span {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+
+            h4 {
+                margin-top: 2rem;
+                text-transform: uppercase;
+            }
+
+            // &:not(:first-child) {
+            //     margin-left: 3.5rem;
+            // }
+        }
+    }
+}

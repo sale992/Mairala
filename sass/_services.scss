@@ -1,0 +1,48 @@
+.services{
+    padding: 1rem 0 9rem 0;
+}
+.services, .services-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__heading {
+        font-family: "Raleway", sans-serif;
+        color: #7b6c63;
+        margin: 5rem 0;
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+        }
+        p{
+            line-height: 3rem;
+            letter-spacing: 1px;
+        }
+    }
+    &__main {
+        font-family: "Raleway", sans-serif;
+        display: flex;
+        justify-content: space-around;
+        &--card {
+            // margin: 1rem 5rem;
+            padding: 1rem 2rem;
+        }
+
+        
+        h3 {
+            padding: 3rem 2rem;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            line-height: 3rem;
+            color: #363636;
+        }
+        p{
+            color: #949494;
+            line-height: 2.4rem;
+            letter-spacing: 1px;
+        }
+        
+    }
+}

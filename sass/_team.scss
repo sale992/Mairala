@@ -43,6 +43,9 @@
 .member {
     
     margin-bottom: 3rem;
+    &:not(:last-child){
+        margin-right: 3rem;
+    }
     .profile-photo {
         height: 300px;
         width: 100%;

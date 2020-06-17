@@ -5,15 +5,6 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
-// $(document).ready(function(){
-//   $("#hamburger-1").click(function(){
-//     $(this).toggleClass("is-active");
-//     // $('.navigation__list').slideDown(1500);
-//     $('.navigation__list').addClass('open');
-//     $('.navigation__list').removeClass('open');
-
-//   });
-// });
 
 $(document).ready(function () {
   $("#hamburger-1").click(function () {
@@ -31,25 +22,10 @@ $(document).ready(function () {
 });
 
 
-$(function () {
-  //caches a jQuery object containing the header element
-  var header = $(".transparent");
-  $(window).scroll(function () {
-    var scroll = $(window).scrollTop();
-    if (scroll >= 50) {
-      header.removeClass('transparent').addClass("white");
-    } else {
-      header.removeClass("white").addClass('transparent');
-    }
-  });
-});
-
-
-nav list transform - 100px
 
 
 
-  * /
+
 
 
 

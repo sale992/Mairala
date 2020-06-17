@@ -65,7 +65,9 @@ a{
     outline: none;
     text-decoration: none;
 }
-
+.fixed-position{
+    overflow: hidden;
+}
 .line{
     position: relative;
     padding-bottom: 45px;
@@ -99,4 +101,10 @@ a{
 #example{
     height: 300px;
     width: 300px;
+}
+.white{
+border-bottom: 5px solid blue;
+}
+.transparent{
+border-bottom: none;
 }

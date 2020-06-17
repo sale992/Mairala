@@ -22,7 +22,6 @@
     }
 
     &__members {
-        // height: 500px;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -44,7 +43,14 @@
     
     margin-bottom: 3rem;
     &:not(:last-child){
-        margin-right: 3rem;
+        // margin-right: 3rem;
+        padding: 1rem;
+    }
+
+    @media (max-width: 768px){
+        &:not(:last-child){
+            margin-right: 2rem;
+        }
     }
     .profile-photo {
         height: 300px;

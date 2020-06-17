@@ -1,11 +1,13 @@
 .testemonials {
     background-color: #1a1a1a;
-    min-height: 50vh;
     padding: 9rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #fff;
+    @media (max-width: 480px){
+        padding: 2rem 0;
+    }
 }
 
 .swiper-slide {

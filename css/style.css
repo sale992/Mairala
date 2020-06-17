@@ -93,12 +93,6 @@ a {
   height: 300px;
   width: 300px; }
 
-.white {
-  border-bottom: 5px solid blue; }
-
-.transparent {
-  border-bottom: none; }
-
 .hamburger .line-hamburger {
   width: 30px;
   height: 5px;

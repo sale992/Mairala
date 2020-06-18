@@ -1,5 +1,4 @@
 .skills {
-    // min-height: 50vh;
     padding: 9rem 0;
     background-image: linear-gradient(to right bottom, rgba(black, 0.7), rgba(black, 0.6)), url(../images/backskill.png);
     background-position: center;
@@ -9,13 +8,6 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-
-    .skills-wrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
     &__heading {
         color: #fff;
         font-size: 2.4rem;
@@ -26,46 +18,59 @@
         letter-spacing: 1px;
     }
 
-    &__cardbox {
-        color: #fff;
-        font-size: 1.3rem;
-        font-family: "Raleway", sans-serif;
+    .skills-wrapper {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        // flex-flow: row nowrap; 
         flex-wrap: wrap;
-        align-content: center;
-        &--card {
-            text-align: center;
-            position: relative;
-            .box {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: center;
-                margin: 0 2rem 4rem 0;
+        justify-content: center;
+    }
 
-                .piechart {
-                    position: relative;
-                    border: 5px solid #7b6c63;
-                    padding: .5rem;
-                    border-radius: 50%;
-                    height: 150px;
-                    width: 150px;
-                    span {
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
-                }
-            }
-
-            h4 {
-                margin-top: 2rem;
-                text-transform: uppercase;
-            }
-
+    .single-chart {
+        margin: 20px;
+        h4{
+            margin-top: 20px;
+            font-size: 1.6rem;
+            letter-spacing: 1px;
+            line-height: 30px;
+            color: #ffffff;
+            font-family: "Raleway";
         }
+    }
+
+    .circular-chart {
+        display: block;
+        margin: 10px auto;
+        width: 150px;
+        height: 150px;
+        border: 3px solid #7b6c63;
+        border-radius: 50%;
+    }
+
+    .circle-bg {
+        fill: none;
+    }
+
+    .circle {
+        fill: none;
+        stroke-width: 1.2;
+        stroke-linecap: square;
+        animation: progress 1s ease-out forwards;
+    }
+
+    @keyframes progress {
+        0% {
+            stroke-dasharray: 0 100;
+        }
+    }
+
+    .circular-chart.gray .circle {
+        stroke: #fff;
+    }
+
+    .percentage {
+        fill: #fff;
+        font-family: sans-serif;
+        font-size: 0.5rem;
+        text-anchor: middle;
     }
 }

@@ -145,8 +145,7 @@ a {
     opacity: 0;
     width: 100vw;
     pointer-events: none;
-    padding-right: 7px;
-    transition: all .3s ease-in; }
+    padding-right: 7px; }
     .navigation__list.open {
       opacity: 1;
       pointer-events: all;
@@ -432,10 +431,6 @@ a {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center; }
-  .skills .skills-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
   .skills__heading {
     color: #fff;
     font-size: 2.4rem;
@@ -444,39 +439,44 @@ a {
     margin-bottom: 4rem;
     line-height: 3rem;
     letter-spacing: 1px; }
-  .skills__cardbox {
-    color: #fff;
-    font-size: 1.3rem;
-    font-family: "Raleway", sans-serif;
+  .skills .skills-wrapper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    align-content: center; }
-    .skills__cardbox--card {
-      text-align: center;
-      position: relative; }
-      .skills__cardbox--card .box {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0 2rem 4rem 0; }
-        .skills__cardbox--card .box .piechart {
-          position: relative;
-          border: 5px solid #7b6c63;
-          padding: .5rem;
-          border-radius: 50%;
-          height: 150px;
-          width: 150px; }
-          .skills__cardbox--card .box .piechart span {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); }
-      .skills__cardbox--card h4 {
-        margin-top: 2rem;
-        text-transform: uppercase; }
+    justify-content: center; }
+  .skills .single-chart {
+    margin: 20px; }
+    .skills .single-chart h4 {
+      margin-top: 20px;
+      font-size: 1.6rem;
+      letter-spacing: 1px;
+      line-height: 30px;
+      color: #ffffff;
+      font-family: "Raleway"; }
+  .skills .circular-chart {
+    display: block;
+    margin: 10px auto;
+    width: 150px;
+    height: 150px;
+    border: 3px solid #7b6c63;
+    border-radius: 50%; }
+  .skills .circle-bg {
+    fill: none; }
+  .skills .circle {
+    fill: none;
+    stroke-width: 1.2;
+    stroke-linecap: square;
+    animation: progress 1s ease-out forwards; }
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100; } }
+  .skills .circular-chart.gray .circle {
+    stroke: #fff; }
+  .skills .percentage {
+    fill: #fff;
+    font-family: sans-serif;
+    font-size: 0.5rem;
+    text-anchor: middle; }
 
 .project {
   display: flex;

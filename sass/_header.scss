@@ -30,6 +30,11 @@
     line-height: 3rem;
     padding: 2rem 0;
     &__list {
+        .scroller{
+            @media(min-width:768px){
+                display: flex;
+            }
+        }
         @media (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
@@ -62,7 +67,4 @@
             color: #7b6c63;
         }
     }
-}
-#scroller{
-    overflow: hidden;
 }

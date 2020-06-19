@@ -45,9 +45,6 @@
         opacity: 1;
         pointer-events: visible;
     }
-    // @media (max-height: 480px){
-    //     right: 50%;
-    // }
 }
 
 .navigation__list {
@@ -63,7 +60,6 @@
             opacity: 1;
             pointer-events: all;
             position: fixed;
-            // top: 0;
             left: 0;
             z-index: -2;
             padding-top: 50px;

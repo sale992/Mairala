@@ -7,7 +7,6 @@
     z-index: 50;
 
     @media (max-width: 768px) {
-        // flex-direction: column;
         justify-content: space-evenly;
         align-items: flex-end;
         position: fixed;
@@ -20,15 +19,18 @@
 }
 
 .header__logo {
-    padding: 2rem 0 2rem 1rem;
+    padding: 20px 20px 20px 10px;
     margin-right: auto;
+    a{
+        display: inline-block;
+    }
 }
 .navigation {
     font-size: 1.6rem;
     color: #ffffff;
     letter-spacing: 1px;
-    line-height: 3rem;
-    padding: 2rem 0;
+    line-height: 30px;
+    padding: 20px 0;
     &__list {
         .scroller{
             @media(min-width:768px){
@@ -41,17 +43,16 @@
             justify-content: center;
             list-style-type: none;
             background-color: rgba(0, 0, 0, 0.9);
-            // position: absolute;
         }
         @media (max-width: 768px) {
             position: absolute;
         }
     }
     &__item {
-        padding: 0.2rem 1rem;
+        padding: 2px 10px;
 
         @media (max-width: 768px) {
-            font-size: 2rem;
+            font-size: 20px;
             margin: 10px 0 30px 0;
         }
     }
@@ -61,7 +62,6 @@
         text-transform: uppercase;
         color: #fff;
         font-weight: bold;
-        font-family: "Raleway", sans-serif;
         transition: all 0.3s ease;
         &:hover {
             color: #7b6c63;

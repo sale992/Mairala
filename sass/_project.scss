@@ -1,32 +1,14 @@
-
-
-.project{
-    display: flex;
-    flex-direction: column;
-    
-    &__heading{
+.project {
+    &__heading {
         position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem;
         color: #7b6c63;
-        text-align: center;
-        padding: 9rem 0;
-        
-        
+        padding-bottom: 60px;
     }
-    
 }
-
-
-.picture-row{
+.picture-row {
     display: flex;
     flex-wrap: wrap;
-    
-
-    .image-1{
+    .image-1 {
         width: 100%;
         height: 100%;
         background-repeat: no-repeat;
@@ -37,31 +19,30 @@
         position: relative;
         width: 25%;
         &:before {
-          display: block;
-          content: "";
-          width: 100%;
-          padding-top: 100%;
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 100%;
         }
-        
+
         > .inner {
-          position: absolute;
-          top: 0;
-          right: 0;
-          bottom: 0;
-          left: 0;
-          padding: 3rem;
-          
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 30px;
         }
-        @media (max-width: 768px){
+        @media (max-width: 768px) {
             width: 50%;
         }
-        @media (max-width: 480px){
+        @media (max-width: 480px) {
             width: 100%;
         }
-      }
+    }
 }
 
-.hover-inner{
+.hover-inner {
     width: 100%;
     height: 100%;
     display: flex;
@@ -72,19 +53,19 @@
     opacity: 0;
     font-size: 3rem;
     color: #fff;
-    transition: all .6s ease-in;
+    transition: all 0.6s ease-in;
     cursor: pointer;
-    &:hover{
+    span {
+        text-transform: uppercase;
+        font-size: 15px;
+    }
+    &:hover {
         opacity: 0.8;
     }
 }
 
-
-
-
-
-.twitter{
-    padding: 9rem 0;
+.twitter {
+    padding: 90px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -92,41 +73,34 @@
     background-color: black;
     color: #fff;
     font-size: 2rem;
-    h3{
-        text-transform: uppercase;
-        line-height: 4.8rem;
+
+    p {
+        line-height: 48px;
+        color: #fff;
     }
-    h5{
-        margin: 2rem 0;
-        text-align: center;
-    }
-    span{
+    span {
         color: #227086;
         font-size: 1.8rem;
         line-height: 4.8rem;
     }
 }
 
-.btn-project{
-    min-height: 200px;
+.btn-project {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 80px;
 }
 
-.btn-see{
+.btn-see {
     background-color: transparent;
     color: #000000;
     border: 1px solid #000000;
-    margin: 9rem 0;
     border-radius: 3px;
-    transition: all .2s ease;
-    padding: 1rem 2rem;
-    transition: all .3s ease;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
 
-    &:hover{
+    &:hover {
         color: #fff;
         background-color: #000000;
-        
     }
 }

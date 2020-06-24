@@ -37,7 +37,7 @@
     pointer-events: none;
     position: absolute;
     right: 0;
-    top: -4px;
+    // top: -4px;  HAMB
     margin: 15px;
     @media (max-width: 768px) {
         display: block;
@@ -56,6 +56,7 @@
         width: 100vw;
         pointer-events: none;
         padding-right: 7px;
+        transition: all 0.6s ease;
         &.open {
             opacity: 1;
             pointer-events: all;
@@ -64,13 +65,14 @@
             z-index: -2;
             padding-top: 50px;
             background-color: #000;
-            transition: all 0.6s ease;
             overflow-y: auto;
+            padding-bottom: 70px;
         }
        
         
     }
 }
-// .scroller{
-//     // overflow-y: scroll;
-// }
+.scroller{
+    overflow-y: auto;
+    height: 100%;
+}

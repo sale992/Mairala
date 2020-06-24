@@ -1,4 +1,8 @@
-.header,
+.header{
+    background-color: #000;
+    position: relative;
+    z-index: 20;
+}
 .header-wrapper {
     position: relative;
     display: flex;
@@ -14,15 +18,18 @@
         z-index: 3;
         top: 0;
         left: 0;
-        opacity: 0.9;
+        // opacity: 0.9;
     }
 }
 
 .header__logo {
-    padding: 20px 20px 20px 10px;
+    padding: 20px 20px 20px 0;
     margin-right: auto;
     a{
         display: inline-block;
+    }
+    @media (max-width:768px){
+        padding-left: 20px;
     }
 }
 .navigation {

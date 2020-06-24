@@ -19,46 +19,33 @@
         h4 {
             color: #c2c2c2;
             margin-bottom: 30px;
-            text-align: left;
         }
         &--logo {
             img {
                 margin-bottom: 30px;
             }
-            p {
-                text-align: left;
-            }
+            
         }
         &--posts {
             .box {
-                padding: 0 0 40px 0;
+                margin-bottom: 40px;
                 border-bottom: 1px solid #393939;
-            }
-            p {
-                text-align: left;
             }
             span {
                 color: #505050;
                 font-size: 1rem;
-                &:not(:first-of-type) {
-                    padding-top: 50px;
-                }
+               
             }
         }
         &--feeds {
             .box {
-                padding: 0 0 40px 0;
+                margin: 0 0 40px 0;
                 border-bottom: 1px solid #393939;
             }
-            p {
-                text-align: left;
-            }
+           
             span {
                 color: #3e3e3e;
                 font-size: 1rem;
-                &:not(:first-of-type) {
-                    padding-top: 50px;
-                }
             }
         }
         &--address {
@@ -90,30 +77,25 @@
     &__copyright {
         background-color: #1c1c1c;
         width: 100%;
-        text-align: center;
         padding: 20px 0;
         h5 {
             text-transform: capitalize;
+            color: #929292;
         }
     }
 }
 .icons {
     margin-top: 20px;
-
-    &__location,
-    &__phone,
-    &__email {
+   
+    .location, .phone, .mail{
         position: relative;
-        display: flex;
-        padding-left: 45px;
-        margin-bottom: 20px;
-
-        a {
-            color: #929292;
-            font-size: 1.7rem;
-        }
+        padding-left: 30px;
+        font-size: 1.7rem;
+        color: #929292;
+        display: inline-block;
     }
-    &__location {
+   
+    .location {
         &::before {
             content: "";
             position: absolute;
@@ -127,7 +109,7 @@
             background-position: center;
         }
     }
-    &__phone {
+    .phone {
         &::before {
             content: "";
             position: absolute;
@@ -141,7 +123,7 @@
             background-position: center;
         }
     }
-    &__email {
+    .mail {
         &::before {
             content: "";
             position: absolute;

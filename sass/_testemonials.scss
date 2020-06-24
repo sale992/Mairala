@@ -1,31 +1,23 @@
 .testemonials {
     background-color: #1a1a1a;
-    padding: 90px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // padding: 90px 0;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
     color: #fff;
     @media (max-width: 480px){
         padding: 20px 0;
     }
 }
 .swiper-slide {
-    padding: 50px 20px;
+    padding: 0px 20px 40px 20px;
     text-align: center;
 
     p {
-        font-size: 1.8rem;
-        letter-spacing: 1px;
-        line-height: 36px;
         color: #929292;
-        font-weight: 300;
-        text-align: center;
     }
     h3 {
-        padding: 20px 10px;
-        letter-spacing: 1px;
-        line-height: 48px;
-        font-weight: 600;
+        color: #fff;
     }
     h5 {
         text-transform: capitalize;
@@ -37,6 +29,10 @@
         color: #227086;
         text-decoration: none;
     }
+}
+.swiper-pagination{
+    position: absolute;
+    bottom: 0;
 }
   .swiper-pagination-bullet{
       background-color: #fff;
